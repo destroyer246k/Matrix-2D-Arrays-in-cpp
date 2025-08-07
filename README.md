@@ -24,17 +24,17 @@ Using nested for loops
 
 **Loops Used:**
 - Two nested loops are used: one for row traversal and another for column-wise input/output.
-- Total: 4 nested loops (2 for input, 2 for output).
+- Total: 2 nested loops (1 for input (rows & columns), 1 for output).
 
 
 ### 2. Matrix Sum
 
-This program adds two matrices of the same dimensions by summing their corresponding elements and stores in other matrix if dimensons are not same then it will prompt user .
+This program adds two matrices of the same dimensions by summing their corresponding elements and stores in other matrix, if dimensons are not same then it will prompt user .
 
 **Loops Used:**
-- Two nested loops for each matrix input.
-- Two nested loops for performing sum and displaying it.
-- Total: 6 nested loops (2 input M1, 2 input M2, 2 for sum and output).
+- Two nested loop for each matrix input.
+- Two nested loop for performing sum and displaying it.
+- Total: 4 nested loops (1 input M1, 1 input M2, 2 for sum and output).
 
 **Algorithm:**
 1. Start.  
@@ -54,8 +54,8 @@ This program multiplies two matrices where columns of matrix 1 match rows of mat
 
 **Loops Used:**
 - Two nested loops for each matrix input.
-- Three nested loops for performing matrix multiplication.
-- Total: 7 nested loops (4 input, 3 for multiplication).
+- one nested for loop (including 3 for statements) for performing matrix multiplication.
+- Total: 4 nested loops (2 input, 1 for multiplication and 1 for output).
 
 **Algorithm:**
 1. Start.  
@@ -65,7 +65,7 @@ This program multiplies two matrices where columns of matrix 1 match rows of mat
 5. Initialize result matrix with zeros.  
 6. Loop: for each row of matrix 1  
    - Loop: for each column of matrix 2  
-     - Loop: perform dot product using the common dimension.  
+     - Loop: perform product using the common dimension.  
 7. Store result and display final matrix.  
 8. Stop.
 
@@ -76,9 +76,9 @@ This program multiplies two matrices where columns of matrix 1 match rows of mat
 This program calculates the sum of diagonal elements in a square matrix (same number of rows and columns) if matrix dimensions are not same  then it will prompt user about it.
 
 **Loops Used:**
-- Two nested loops for input.
+- One nested loops for input.
 - One loop with condition `i == j` to extract diagonal elements.
-- Total: 3 nested loops.
+- Total: 2 nested loops.
 
 
 ### 5. Transpose of Matrix
@@ -86,9 +86,9 @@ This program calculates the sum of diagonal elements in a square matrix (same nu
 This program creates the transpose of a matrix by swapping its rows with columns.
 
 **Loops Used:**
-- Two nested loops for input.
-- Two nested loops to swap elements `[i][j]` with `[j][i]`.
-- Total: 4 nested loops.
+- One nested loops for input.
+- One nested loops to swap elements `[i][j]` with `[j][i]`.
+- Total: 2 nested loops.
 
 **Algorithm:**
 1. Start.  
@@ -102,12 +102,12 @@ This program creates the transpose of a matrix by swapping its rows with columns
 
 ### 6. Comparing Two Matrices
 
-This program checks if two matrices are exactly equal in both size and element values.
+This program checks if two matrices are exactly equal in both size and element values, if not user will be prompted appropriately.
 
 **Loops Used:**
 - Two nested loops to take input of both matrices.
-- Two nested loops to compare each corresponding element.
-- Total: 4 nested loops.
+- One nested loops to compare each corresponding element.
+- Total: 3 nested loops.
 
 **Algorithm:**
 1. Start.  
@@ -125,8 +125,8 @@ This program checks if two matrices are exactly equal in both size and element v
 
 We implemented key operations on 2D arrays including input/output, sum, multiplication, diagonal sum, transpose, and comparison. Each task required nested loops to traverse and process matrix elements:
 
-- **Input/Output, Sum, Diagonal, Transpose, Compare**: Used two nested loops.  
-- **Multiplication**: Required three nested loops for matrix dot product.
-
+**Input/Output, Sum, Diagonal, Transpose, Compare**: Used two nested loops.                             
+**Multiplication**: Required nested loop for loop containing 3 for statements to perform matrix  product.                        
+                                                      
 Understanding these loop structures and logic is fundamental to building efficient matrix-based applications in C++.
 
