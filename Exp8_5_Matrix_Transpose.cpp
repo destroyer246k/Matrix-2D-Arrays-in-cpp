@@ -5,13 +5,15 @@
 using namespace std;
 int main() {
     int r1,c1,Dsum=0;
+    int r2 = c1;
+    int c2 = r1;
     int c =1;
     cout << "Enter No of Rows in Matrix 1: ";
     cin >> r1;
     cout << "Enter No of Columns in Matrix 1: ";
     cin >> c1;
     int m1[r1][c1];
-    int m2[50][50];
+    int m2[r2][c1];
     cout << "\nMatrix 1:\n";
     for(int i = 0; i < r1;i++)
         for(int j = 0; j < c1;j++){
@@ -53,3 +55,4 @@ Transpose:
 2 5 8
 3 6 9
 */
+
