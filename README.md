@@ -6,7 +6,7 @@
 
 ## Theory
 
-A two-dimensional array (matrix) in C++ is an array of arrays used to represent data in a tabular format. But, stored in continuous memory location It enables row-column-based access to elements and is commonly used for performing mathematical operations like addition, multiplication, and transpose.
+A two-dimensional array (matrix) in C++ is an array of arrays used to represent data in a tabular format. But, stored in continuous memory location. It enables row-column-based access to elements and is commonly used for performing mathematical operations like addition, multiplication, and transpose.
 
 ### Key Features:
 - Declared as `data_type array_name[rows][columns]`.
